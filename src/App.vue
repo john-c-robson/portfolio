@@ -33,6 +33,7 @@ import { defineComponent, ref } from "vue";
 import PortfolioStub from "./components/PortfolioStub.vue";
 import { Project } from "@/interfaces";
 import pneumonia from "@/assets/cnnModelsImage.png";
+import gesturedetection from "@/assets/GestureDetection.png";
 
 export default defineComponent({
   name: "App",
@@ -48,9 +49,8 @@ export default defineComponent({
       },
       {
         title: "Gesture Detection",
-        image:
-          "https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg",
-        url: "",
+        image: gesturedetection,
+        url: "https://github.com/john-c-robson/gesturedetection",
       },
     ]);
     return { projects };
