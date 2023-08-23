@@ -34,6 +34,7 @@ import PortfolioStub from "./components/PortfolioStub.vue";
 import { Project } from "@/interfaces";
 import pneumonia from "@/assets/cnnModelsImage.png";
 import gestureclassification from "@/assets/GestureDetection.png";
+import traffictracker from "@/assets/traffictracker.png";
 
 export default defineComponent({
   name: "App",
@@ -51,6 +52,11 @@ export default defineComponent({
         title: "Gesture Classification",
         image: gestureclassification,
         url: "https://github.com/john-c-robson/gestureclassification",
+      },
+      {
+        title: "Traffic Tracker",
+        image: traffictracker,
+        url: "https://github.com/john-c-robson/traffictracker",
       },
     ]);
     return { projects };
