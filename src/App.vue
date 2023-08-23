@@ -33,7 +33,7 @@ import { defineComponent, ref } from "vue";
 import PortfolioStub from "./components/PortfolioStub.vue";
 import { Project } from "@/interfaces";
 import pneumonia from "@/assets/cnnModelsImage.png";
-import gesturedetection from "@/assets/GestureDetection.png";
+import gestureclassification from "@/assets/GestureDetection.png";
 
 export default defineComponent({
   name: "App",
@@ -48,9 +48,9 @@ export default defineComponent({
         url: "https://github.com/john-c-robson/pneumoniadetection",
       },
       {
-        title: "Gesture Detection",
-        image: gesturedetection,
-        url: "https://github.com/john-c-robson/gesturedetection",
+        title: "Gesture Classification",
+        image: gestureclassification,
+        url: "https://github.com/john-c-robson/gestureclassification",
       },
     ]);
     return { projects };
