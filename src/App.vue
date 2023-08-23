@@ -46,6 +46,12 @@ export default defineComponent({
         image: pneumonia,
         url: "https://github.com/john-c-robson/pneumoniadetection",
       },
+      {
+        title: "Gesture Detection",
+        image:
+          "https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg",
+        url: "",
+      },
     ]);
     return { projects };
   },
