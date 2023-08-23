@@ -71,7 +71,7 @@ export default defineComponent({
         url: "https://github.com/john-c-robson/gradepredictor",
       },
       {
-        title: "Malaria Detection and Hyper Parameter Tuning",
+        title: "Malaria Model, Hyper Parameter Tuning",
         image: malariadetection,
         url: "https://github.com/john-c-robson/MalariadetectionHyperparametertuning",
       },

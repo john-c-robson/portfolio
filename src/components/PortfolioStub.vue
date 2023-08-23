@@ -1,12 +1,17 @@
 <template>
   <a
     :href="url"
-    class="w-full p-4 rounded-md border border-slate-500 bg-neutral-700 text-white"
+    class="w-full h-72 p-4 rounded-md border border-slate-500 bg-neutral-700 text-white"
     target="_blank"
     ref="noopenner noreferrer"
   >
-    <img class="" :src="image" alt="stub-image" />
-    <h2 class="text-xl font-bold">{{ title }}</h2>
+    <div
+      class="w-full h-[82%] bg-cover"
+      :style="`background-image: url(${image})`"
+    >
+      <!-- <img class="w-full" :src="image" alt="stub-image" /> -->
+    </div>
+    <h2 class="font-bold pt-2">{{ title }}</h2>
   </a>
 </template>
 
