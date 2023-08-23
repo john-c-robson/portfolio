@@ -1,17 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="w-4/5 block mx-auto p-4 border-b mb-6 text-white">
+    <h2 class="text-xl font-bold">John C. Robson</h2>
+    <h3 class="text-base">Development Portfolio</h3>
+    <div class="flex flex-row gap-2">
+      <a
+        href="https://www.linkedin.com/in/john-robson-63a294289/"
+        class="w-20 px-2 py-1 bg-slate-200 rounded hover:bg-slate-400"
+        ><img src="./assets/LinkedIn.png"
+      /></a>
+      <a
+        href="https://github.com/john-c-robson"
+        class="w-20 px-2 py-1 bg-slate-200 rounded hover:bg-slate-400"
+        ><img src="./assets/GitHub.png"
+      /></a>
+    </div>
+  </div>
+  <div
+    class="grid md:grid-cols-4 sm:grid-cols-2 gap-4 container w-4/5 mx-auto bg-neutral-800"
+  >
+    <PortfolioStub
+      v-for="project in projects"
+      :key="project.title"
+      :title="project.title"
+      :image="project.image"
+      :url="project.url"
+    />
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, ref } from "vue";
+import PortfolioStub from "./components/PortfolioStub.vue";
+import { Project } from "@/interfaces";
+import pneumonia from "@/assets/cnnModelsImage.png";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    PortfolioStub,
+  },
+  setup() {
+    const projects = ref<Project[]>([
+      {
+        title: "Pneumonia Detection",
+        image: pneumonia,
+        url: "https://github.com/john-c-robson/pneumoniadetection",
+      },
+    ]);
+    return { projects };
+  },
 });
 </script>
 
@@ -20,8 +57,13 @@ export default defineComponent({
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+html,
+body,
+#app {
+  background: #262626;
 }
 </style>
