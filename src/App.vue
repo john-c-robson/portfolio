@@ -6,17 +6,21 @@
       <a
         href="https://www.linkedin.com/in/john-robson-63a294289/"
         class="w-20 px-2 py-1 bg-slate-200 rounded hover:bg-slate-400"
+        target="_blank"
+        ref="noopenner noreferrer"
         ><img src="./assets/LinkedIn.png"
       /></a>
       <a
         href="https://github.com/john-c-robson"
         class="w-20 px-2 py-1 bg-slate-200 rounded hover:bg-slate-400"
+        target="_blank"
+        ref="noopenner noreferrer"
         ><img src="./assets/GitHub.png"
       /></a>
     </div>
   </div>
   <div
-    class="grid md:grid-cols-4 sm:grid-cols-2 gap-4 container w-4/5 mx-auto bg-neutral-800"
+    class="grid md:grid-cols-3 sm:grid-cols-2 gap-4 container w-4/5 mx-auto bg-neutral-800"
   >
     <PortfolioStub
       v-for="project in projects"
@@ -37,6 +41,7 @@ import gestureclassification from "@/assets/GestureDetection.png";
 import traffictracker from "@/assets/traffictracker.jpg";
 import gradepredictor from "@/assets/gradepredictor.png";
 import malariadetection from "@/assets/malariadetection.png";
+import surveyrobot from "@/assets/surveyrobot.jpeg";
 
 export default defineComponent({
   name: "App",
@@ -69,6 +74,11 @@ export default defineComponent({
         title: "Malaria Detection and Hyper Parameter Tuning",
         image: malariadetection,
         url: "https://github.com/john-c-robson/MalariadetectionHyperparametertuning",
+      },
+      {
+        title: "Self Driving Surveying Robot",
+        image: surveyrobot,
+        url: "https://github.com/john-c-robson/selfdrivingsurveyingrobot",
       },
     ]);
     return { projects };
