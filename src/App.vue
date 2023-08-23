@@ -34,7 +34,7 @@ import PortfolioStub from "./components/PortfolioStub.vue";
 import { Project } from "@/interfaces";
 import pneumonia from "@/assets/cnnModelsImage.png";
 import gestureclassification from "@/assets/GestureDetection.png";
-import traffictracker from "@/assets/traffictracker.png";
+import traffictracker from "@/assets/traffictracker.jpg";
 
 export default defineComponent({
   name: "App",
