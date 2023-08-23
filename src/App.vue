@@ -35,6 +35,7 @@ import { Project } from "@/interfaces";
 import pneumonia from "@/assets/cnnModelsImage.png";
 import gestureclassification from "@/assets/GestureDetection.png";
 import traffictracker from "@/assets/traffictracker.jpg";
+import gradepredictor from "@/assets/gradepredictor.png";
 
 export default defineComponent({
   name: "App",
@@ -57,6 +58,11 @@ export default defineComponent({
         title: "Traffic Tracker",
         image: traffictracker,
         url: "https://github.com/john-c-robson/traffictracker",
+      },
+      {
+        title: "Grade Predictor",
+        image: gradepredictor,
+        url: "https://github.com/john-c-robson/gradepredictor",
       },
     ]);
     return { projects };
