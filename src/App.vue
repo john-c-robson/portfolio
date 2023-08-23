@@ -36,6 +36,7 @@ import pneumonia from "@/assets/cnnModelsImage.png";
 import gestureclassification from "@/assets/GestureDetection.png";
 import traffictracker from "@/assets/traffictracker.jpg";
 import gradepredictor from "@/assets/gradepredictor.png";
+import malariadetection from "@/assets/malariadetection.png";
 
 export default defineComponent({
   name: "App",
@@ -63,6 +64,11 @@ export default defineComponent({
         title: "Grade Predictor",
         image: gradepredictor,
         url: "https://github.com/john-c-robson/gradepredictor",
+      },
+      {
+        title: "Malaria Detection and Hyper Parameter Tuning",
+        image: malariadetection,
+        url: "https://github.com/john-c-robson/MalariadetectionHyperparametertuning",
       },
     ]);
     return { projects };
