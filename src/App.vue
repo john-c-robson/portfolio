@@ -42,6 +42,8 @@ import traffictracker from "@/assets/traffictracker.jpg";
 import gradepredictor from "@/assets/gradepredictor.png";
 import malariadetection from "@/assets/malariadetection.png";
 import surveyrobot from "@/assets/surveyrobot.jpeg";
+import crimedata from "@/assets/crimedata.png";
+
 
 export default defineComponent({
   name: "App",
@@ -79,6 +81,11 @@ export default defineComponent({
         title: "Self Driving Surveying Robot",
         image: surveyrobot,
         url: "https://github.com/john-c-robson/selfdrivingsurveyingrobot",
+      },
+      {
+        title: "Big Data - Crime Correlations",
+        image: crimedata,
+        url: "https://github.com/john-c-robson/crimeanalysis",
       },
     ]);
     return { projects };
